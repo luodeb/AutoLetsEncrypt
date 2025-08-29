@@ -18,7 +18,7 @@ jobs:
 
       - name: prepare
         run: |
-            if test ! -z "${{ secrets.DOMAIN_LIST }}" && test ! -z "${{ secrets.KEY_SH }}" && test ! -z "${{ secrets.WEBDAV_URL }}"
+            if test ! -z "${{ secrets.DOMAIN_LIST }}" && test ! -z "${{ secrets.KEY_SH }}"
             then
                 echo renew='true' >> $GITHUB_ENV
             fi
